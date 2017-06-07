@@ -1,7 +1,7 @@
 " run pdftotext to read PDF files
 autocmd BufReadPost,FileReadPost *.pdf call s:readpdf()
     
-fun s:readpdf()
+function! s:readpdf()
     if (!executable("pdftotext"))
         echo "Error: pdftotext not avaliable"
         return
@@ -17,4 +17,4 @@ fun s:readpdf()
 
     " make the buffer unwritable: we don't want to clobber the PDF file!
     set nowrite
-endfun
+endfunction

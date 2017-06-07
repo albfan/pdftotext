@@ -1,4 +1,4 @@
-function! s:readpdf()
+function! pdftotext#readpdf()
     if (!executable("pdftotext"))
         echo "Error: pdftotext not avaliable"
         return

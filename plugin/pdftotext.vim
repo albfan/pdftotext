@@ -1,2 +1,4 @@
-" run pdftotext to read PDF files
-autocmd BufReadPost,FileReadPost *.pdf call s:readpdf()
+augroup OpenPdfBufRead
+    autocmd!
+    autocmd BufReadPost,FileReadPost *.pdf call pdftotext#readpdf()
+augroup END

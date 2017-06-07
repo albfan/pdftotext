@@ -1,3 +1,0 @@
-This is a mirror of http://www.vim.org/scripts/script.php?script_id=989
-
-This plugin will invoke the pdftotext utility to filter a PDF file that is being edited in vim and convert it to plain text in the current buffer. Requires that pdftotext is installed. It is included in the xpdf package (available from http://www.foolabs.com/xpdf/).
